@@ -669,6 +669,19 @@ img {
 	border: 1px solid #fff;
 }
 
+.item-line {
+	display: flex;
+	align-items: center;
+}
+
+.item-line span {
+	display: block;
+	width: 100%;
+	max-width: 686px;
+	height: 2px;
+	background: #4f62f6;
+}
+
 @media screen and (max-width: 1400px) {
 	h1 {
 		font-size: 60px;
@@ -777,6 +790,9 @@ img {
 }
 
 @media screen and (max-width: 850px) {
+	.item-line {
+		display: none;
+	}
 	.hero {
 		padding: 2rem;
 	}
@@ -992,6 +1008,11 @@ img {
 	}
 
 	.button {
-		max-width: 300px;
+		max-width: 250px;
+		font-size: 24px;
+	}
+
+	.card-set-two {
+		grid-template-columns: 1fr;
 	}
 }
