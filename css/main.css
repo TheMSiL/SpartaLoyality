@@ -60,7 +60,7 @@ h1 {
 h2 {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-size: 62px;
+	font-size: 50px;
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-bottom: 1rem;
@@ -564,7 +564,7 @@ img {
 
 .slider-content {
 	display: grid;
-	gap: 125px;
+	gap: 80px;
 }
 
 .slider-nav {
@@ -688,7 +688,7 @@ img {
 	}
 
 	h2 {
-		font-size: 50px;
+		font-size: 46px;
 	}
 
 	.hero-text {
@@ -723,7 +723,7 @@ img {
 	}
 
 	h2 {
-		font-size: 42px;
+		font-size: 40px;
 	}
 
 	.image-title,
@@ -814,7 +814,7 @@ img {
 	}
 
 	h2 {
-		font-size: 38px;
+		font-size: 36px;
 	}
 
 	.inside-subtitle {
