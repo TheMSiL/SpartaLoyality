@@ -269,9 +269,47 @@ img {
 	justify-content: space-between;
 }
 
+.about-general {
+	position: relative;
+}
+
+.photo-span {
+	position: absolute;
+	bottom: 30%;
+	right: 0;
+	color: #000;
+	border: 4px solid black;
+	background: #fff;
+	padding: 30px;
+	border-radius: 20px;
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	width: 400px;
+}
+
 .about-title {
 	max-width: 680px;
 	line-height: 125%;
+}
+
+.category-span-1 {
+	bottom: 15%;
+	right: 15%;
+}
+
+.category-span-2 {
+	bottom: 15%;
+	right: 55%;
+}
+
+.category-span-4 {
+	right: 60%;
+}
+
+.category-span-3 {
+	bottom: 15%;
+	right: 5%;
 }
 
 .about-subtitle {
@@ -682,6 +720,13 @@ img {
 	background: #4f62f6;
 }
 
+@media screen and (max-width: 1450px) {
+	.category-span-1 {
+		bottom: 15%;
+		right: 5%;
+	}
+}
+
 @media screen and (max-width: 1400px) {
 	h1 {
 		font-size: 60px;
@@ -697,6 +742,11 @@ img {
 
 	.about-header {
 		align-items: flex-end;
+	}
+
+	.photo-span {
+		font-size: 26px;
+		padding: 25px;
 	}
 
 	.about-text {
@@ -749,6 +799,10 @@ img {
 		font-size: 22px;
 	}
 
+	.category-span-4 {
+		right: 50%;
+	}
+
 	.button {
 		font-size: 30px;
 		max-width: 350px;
@@ -787,19 +841,6 @@ img {
 	#my-form-status {
 		width: 90vw;
 	}
-}
-
-@media screen and (max-width: 850px) {
-	.item-line {
-		display: none;
-	}
-	.hero {
-		padding: 2rem;
-	}
-
-	.about-logo-item {
-		flex: 0 0 33.33%;
-	}
 
 	.about-header {
 		flex-direction: column;
@@ -811,6 +852,27 @@ img {
 
 	.industries-flex {
 		flex-direction: column;
+	}
+
+	.about-header {
+		align-items: center;
+	}
+	.item-line {
+		display: none;
+	}
+
+	.category-span-2 {
+		right: 50%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.hero {
+		padding: 2rem;
+	}
+
+	.about-logo-item {
+		flex: 0 0 33.33%;
 	}
 
 	h2 {
@@ -896,17 +958,42 @@ img {
 	#my-form-status {
 		padding: 4rem 0.5rem;
 	}
+
+	.photo-span {
+		font-size: 24px;
+		padding: 20px;
+		background: #4f62f6;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		color: #fff;
+		border: none;
+		width: 250px;
+	}
 }
 
 @media screen and (max-width: 650px) {
 	.my-form-text {
 		font-size: 20px;
 	}
+	.photo-span {
+		font-size: 18px;
+		padding: 20px;
+	}
+	.category-span-2 {
+		right: 40%;
+	}
+
+	.category-span-4 {
+		right: 45%;
+	}
 }
 
 @media screen and (max-width: 480px) {
 	.about {
 		padding-top: 30px;
+	}
+
+	.photo-span {
+		display: none;
 	}
 
 	.my-form-btn {

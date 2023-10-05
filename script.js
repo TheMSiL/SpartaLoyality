@@ -440,6 +440,31 @@ const languages = [
 		en: '© 2023 Spartavity Polityka prywatności',
 		ua: '© 2023 Spartavity Політика кофіденційності',
 	},
+	{
+		className: 'span-customer',
+		en: `FULL CUSTOMER VIEW`,
+		ua: `ПОВНЕ УЯВЛЕННЯ ПРО КЛІЄНТА`,
+	},
+	{
+		className: 'category-span-1',
+		en: `VARIOUS TYPES OF PROMOTIONS`,
+		ua: `РІЗНІ ВИДИ ПРОМО-АКЦІЙ`,
+	},
+	{
+		className: 'category-span-2',
+		en: `SEGMENT CUSTOMERS`,
+		ua: `СЕГМЕНТИ КЛІЄНТІВ`,
+	},
+	{
+		className: 'category-span-3',
+		en: `CUSTOMER SEGMENTATION`,
+		ua: `НАЛАШТУВАННЯ ШАБЛОНІВ ПОВІДОМЛЕННЯ`,
+	},
+	{
+		className: 'category-span-4',
+		en: `SEGMENTATION RFM`,
+		ua: `СЕГМЕНТАЦІЯ RFM`,
+	},
 ];
 
 const htmlV = [
