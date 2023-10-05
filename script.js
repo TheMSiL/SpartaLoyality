@@ -1,11 +1,32 @@
 const demoButtons = document.querySelectorAll('.button-link');
 const formSection = document.getElementById('form');
 
-demoButtons.forEach(btn =>
+demoButtons.forEach(btn => {
 	btn.addEventListener('click', function (event) {
-		formSection.scrollIntoView({ behavior: 'smooth' });
-	})
-);
+		event.preventDefault(); // Предотвращаем переход по ссылке
+		const targetId = this.getAttribute('href').substring(1); // Получаем ID целевого элемента
+		const targetElement = document.getElementById(targetId); // Находим этот элемент
+		if (targetElement) {
+			const targetPosition = targetElement.offsetTop; // Получаем его позицию относительно верха страницы
+			const startPosition =
+				window.pageYOffset ||
+				document.documentElement.scrollTop ||
+				document.body.scrollTop ||
+				0; // Текущая позиция скролла
+			const distance =
+				targetPosition > startPosition
+					? targetPosition - startPosition
+					: startPosition - targetPosition; // Расстояние для анимации
+
+			// Запускаем анимацию
+			window.scrollTo({
+				top: targetPosition,
+				left: 0,
+				behavior: 'smooth',
+			});
+		}
+	});
+});
 
 const form = document.getElementById('my-form');
 const overlay = document.querySelector('.overlay');
@@ -644,7 +665,7 @@ const changeSlide = () => {
 	}
 
 	// Начать автоматическое переключение слайдов
-	slideInterval = setInterval(autoSlide, 3000);
+	slideInterval = setInterval(autoSlide, 8000);
 
 	// Обработчики событий для навигации
 	const navItems = document.querySelectorAll('.slider-nav div');
@@ -654,7 +675,7 @@ const changeSlide = () => {
 			clearInterval(slideInterval); // Остановить автоматическое переключение
 			currentSlide = index;
 			showSlide(currentSlide);
-			slideInterval = setInterval(autoSlide, 3000); // Запустить автоматическое переключение снова
+			slideInterval = setInterval(autoSlide, 8000); // Запустить автоматическое переключение снова
 		});
 	});
 };
